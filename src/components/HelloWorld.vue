@@ -18,6 +18,7 @@ export default {
 		loadScripts() {
       // import ag-grid.min.js from dist folder
 			const scripts = [
+        'https://cdn.jsdelivr.net/gh/ahmedsakri/ag-grid-rc/dist/demo-wc.min.js',
 				"https://cdn.jsdelivr.net/npm/ag-grid-community@28.0.0/dist/ag-grid-community.min.js",
 			];
 			scripts.map((sUrl) => {
