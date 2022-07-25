@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:prod": "export NODE_ENV=${NODE_ENV:-'production'} && vue-cli-service build --target wc --inline-vue --name demo-wc  --mode $NODE_ENV 'src/components/DemoWc.vue'"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -15,9 +16,14 @@
     "@vue/cli-plugin-babel": "~4.5.15",
     "@vue/cli-plugin-eslint": "~4.5.15",
     "@vue/cli-service": "~4.5.15",
+    "ag-grid-community": "^28.0.0",
+    "ag-grid-vue": "^28.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.49.7",
+    "sass-loader": "^8.0.2",
+    "vue-property-decorator": "^8.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
