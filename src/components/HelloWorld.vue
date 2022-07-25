@@ -16,7 +16,7 @@ export default {
 	},
 	methods: {
 		loadScripts() {
-      // import ag-grid.min.js from dist folder
+      // import js file from the repositories dist folder...... ag-grid-rc/dist/demo-wc.min.js
 			const scripts = [
         'https://cdn.jsdelivr.net/gh/ahmedsakri/ag-grid-rc/dist/demo-wc.min.js',
 				"https://cdn.jsdelivr.net/npm/ag-grid-community@28.0.0/dist/ag-grid-community.min.js",
